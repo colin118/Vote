@@ -3,7 +3,7 @@ sap.ui.define([
 ], function (Controller) {
 	"use strict";
 
-	return Controller.extend("vote.vote.controller.View1", {
+	return Controller.extend("sap.ui.demo.vote.controller.View1", {
 		onInit: function () {
 
 		}
