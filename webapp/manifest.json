@@ -58,12 +58,8 @@
 				"settings": {
 					"bundleName": "sap.ui.demo.vote.i18n.i18n"
 				}
-			},
-			"voteSummary": {
-				"type": "sap.ui.model.json.JSONModel",
-				"settings": {},
-				"preload": false
 			}
+			
 		},
 		"resources": {
 			"css": [{

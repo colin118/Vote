@@ -18,12 +18,12 @@ sap.ui.define([
 			};
 			var oModel = new JSONModel(oJSONData);
 			oModel.loadData("./voteSummary.json");
-			this.getView().setModel(oModel, "View1");
-			
-			var oResourceBundle = new ResourceModel({
+			this.getView().setModel(oModel, "voteSummary");
+		
+			/*var oResourceBundle = new ResourceModel({
 				bundleName: "sap.ui.demo.vote.i18n.i18n"
 			});
-			sap.ui.getCore().setModel(oResourceBundle, "i18n");
+			sap.ui.getCore().setModel(oResourceBundle, "i18n");*/
 		},
 		
 		onRefresh : function(){

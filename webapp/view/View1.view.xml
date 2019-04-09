@@ -4,9 +4,9 @@
 			<pages>
 				<Page id="page" title="{i18n>title}">
 					<content>
-						<Text text="Hello World - testing" />
 						<Table 
 							id="voteSum"
+							items="{voteSummary>/voteSummary}"
 							growing="true"
 							growingThreshold="10">
 							<headerToolbar>
@@ -22,25 +22,29 @@
 										        icon = "sap-icon://refresh"
 										        tooltip = "{i18n>refreshButtonText}"
 										        press = ".onRefresh" />
-										        
 									</content>
 								</OverflowToolbar>
 							</headerToolbar>
+							<infoToolbar>
+								<Toolbar active="ture">
+									<Label text="Vote Result List"/>
+								</Toolbar>
+							</infoToolbar>
 							<columns>
-								<Column id="voteOption">
+								<Column id="voteOptionHeader">
 									<Text text="{i18n>voteOption}"/>
 								</Column>
-								<Column id="votesNumber">
+								<Column id="votesNumberHeader">
 									<Text text="{i18n>votesNumber}"/>
 								</Column>
 							</columns>
 							<items>
 								<ColumnListItem>
 									<cells>
-										<Input value="{voteOption}"/>
+										<Input value="{voteSummary>voteOption}"/>
 									</cells>
 									<cells>
-										<Input value="{votesNumber}"/>
+										<Input value="{voteSummary>votesNumber}"/>
 									</cells>
 								</ColumnListItem>
 							</items>
