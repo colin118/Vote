@@ -1,0 +1,19 @@
+{
+  "voteSummary": [
+	{
+	  "voteOption": "Go to Mount Huang",
+	  "votesNumber": 21
+	},
+	
+	{
+	  "voteOption": "Go to Zhangjiajie",
+	  "votesNumber": 30
+	},
+	
+	{
+	  "voteOption": "Go to Tibet",
+	  "votesNumber": 50
+	}
+	
+  ]
+}	

@@ -4,7 +4,47 @@
 			<pages>
 				<Page id="page" title="{i18n>title}">
 					<content>
-						<Text text="Hello World" />
+						<Text text="Hello World - testing" />
+						<Table 
+							id="voteSum"
+							growing="true"
+							growingThreshold="10">
+							<headerToolbar>
+								<OverflowToolbar>
+									<content>
+										<ToolbarSpacer/>
+										<SearchField
+											id="searchField"
+											width="20%"
+											placeholder="{i18n>searchFieldPlaceholder}"
+											search=".onSearch"/>
+										<Button id = "refreshUsersButton"
+										        icon = "sap-icon://refresh"
+										        tooltip = "{i18n>refreshButtonText}"
+										        press = ".onRefresh" />
+										        
+									</content>
+								</OverflowToolbar>
+							</headerToolbar>
+							<columns>
+								<Column id="voteOption">
+									<Text text="{i18n>voteOption}"/>
+								</Column>
+								<Column id="votesNumber">
+									<Text text="{i18n>votesNumber}"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<Input value="{voteOption}"/>
+									</cells>
+									<cells>
+										<Input value="{votesNumber}"/>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
 					</content>
 				</Page>
 			</pages>
