@@ -49,6 +49,51 @@
 								</ColumnListItem>
 							</items>
 						</Table>
+						<Table 
+							id="voteSumAct"
+							items="{externalodata>/Invoices}"
+							growing="true"
+							growingThreshold="10">
+							<headerToolbar>
+								<OverflowToolbar>
+									<content>
+										<ToolbarSpacer/>
+										<SearchField
+											id="searchFieldAct"
+											width="20%"
+											placeholder="{i18n>searchFieldPlaceholder}"
+											search=".onSearchAct"/>
+										<Button id = "refreshUsersButtonAct"
+										        icon = "sap-icon://refresh"
+										        tooltip = "{i18n>refreshButtonText}"
+										        press = ".onRefreshAct" />
+									</content>
+								</OverflowToolbar>
+							</headerToolbar>
+							<infoToolbar>
+								<Toolbar active="ture">
+									<Label text="External ODATA List test"/>
+								</Toolbar>
+							</infoToolbar>
+							<columns>
+								<Column id="voteOptionHeadeActr">
+									<Text text="{i18n>voteOption}"/>
+								</Column>
+								<Column id="votesNumberHeaderAct">
+									<Text text="{i18n>votesNumber}"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<Input value="{externalodata>ProductName}"/>
+									</cells>
+									<cells>
+										<Input value="{externalodata>Quantity}"/>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
 					</content>
 				</Page>
 			</pages>

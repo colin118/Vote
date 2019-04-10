@@ -9,6 +9,15 @@
 		},
 		"title": "{{appTitle}}",
 		"description": "{{appDescription}}",
+		"dataSources": {
+			"default": {
+				"uri": "/destinations/northwind/V2/Northwind/Northwind.svc/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0"
+				}
+			}
+		},
 		"sourceTemplate": {
 			"id": "ui5template.basicSAPUI5ApplicationProject",
 			"version": "1.40.12"
@@ -58,8 +67,16 @@
 				"settings": {
 					"bundleName": "sap.ui.demo.vote.i18n.i18n"
 				}
+			},
+			"externalodata": {
+				"dataSource": "default",
+				"settings": {
+					"autoExpandSelect": true,
+					"groupId": "$auto",
+					"synchronizationMode": "None",
+					"useBatch": false
+				}
 			}
-			
 		},
 		"resources": {
 			"css": [{
