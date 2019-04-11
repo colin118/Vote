@@ -16,7 +16,7 @@ sap.ui.define([
 			// var oModel2 = this.getOwnerComponent().getModel("su");
 			// this.getView().setModel(oModel2, "View1");
 			
-			sap.ui.getCore().byId("View1").getModel().refresh(true);
+		//	sap.ui.getCore().byId("View1").getModel().refresh(true);
 		}
 		/*
 		,

@@ -1,5 +1,4 @@
 {
-
 	"welcomeFile": "/webapp/index.html",
 	"routes": [{
 			"path": "/resources",
@@ -26,7 +25,8 @@
 				"name": "VoteCo"
 			},
 			"description": "Target OData system"
-		}, {
+		}, 
+		{
 			"path": "/Suppliers",
 			"target": {
 				"type": "destination",

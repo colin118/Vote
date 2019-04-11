@@ -1,7 +1,7 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/Device",
-	"sap/ui/demo/vote/model/models"
+	"vote/vote/model/models"
 ], function (UIComponent, Device, models) {
 	"use strict";
 
