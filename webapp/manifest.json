@@ -9,22 +9,27 @@
 		},
 		"title": "{{appTitle}}",
 		"description": "{{appDescription}}",
-		"sourceTemplate": {
-			"id": "ui5template.basicSAPUI5ApplicationProject",
-			"version": "1.40.12"
+
+		"dataSources": {
+			"Products": {
+				"uri": "/Products",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0"
+				}
+			},
+			"Suppliers": {
+				"uri": "/Suppliers",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0"
+				}
+			}
 		}
 	},
 
 	"sap.ui": {
 		"technology": "UI5",
-		"icons": {
-			"icon": "",
-			"favIcon": "",
-			"phone": "",
-			"phone@2": "",
-			"tablet": "",
-			"tablet@2": ""
-		},
 		"deviceTypes": {
 			"desktop": true,
 			"tablet": true,
@@ -33,7 +38,7 @@
 	},
 
 	"sap.ui5": {
-		"flexEnabled": false,
+
 		"rootView": {
 			"viewName": "vote.vote.view.View1",
 			"type": "XML",
@@ -57,6 +62,24 @@
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
 					"bundleName": "vote.vote.i18n.i18n"
+				}
+			},
+			"": {
+				"dataSource": "Products",
+				"settings": {
+					"autoExpandSelect": true,
+					"operationMode": "Server",
+					"groupId": "$direct",
+					"synchronizationMode": "None"
+				}
+			},
+			"su": {
+				"dataSource": "Suppliers",
+				"settings": {
+					"autoExpandSelect": true,
+					"operationMode": "Server",
+					"groupId": "$direct",
+					"synchronizationMode": "None"
 				}
 			}
 		},

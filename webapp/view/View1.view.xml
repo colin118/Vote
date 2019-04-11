@@ -1,9 +1,77 @@
-<mvc:View controllerName="vote.vote.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="vote.vote.controller.View1" displayBlock="true">
+	
+	<Button xmlns="sap.m" text="{i18n>back}" id="button0" tooltip="Back"/>
+	<TimePicker xmlns="sap.m" id="picker0"/>
 	<Shell id="shell">
-		<App id="app">
+		<App id="app" class="sapUiSizeCompact">
 			<pages>
 				<Page id="page" title="{i18n>title}">
-					<content></content>
+					<content>
+						<Table id="peopleList" growing="true" growingThreshold="10" items="{ path: '/Products' }">
+							<columns>
+								<Column id="ProductID">
+									<Text text="ProductID"/>
+								</Column>
+								<Column id="Name">
+									<Text text="Name"/>
+								</Column>
+								<Column id="Description">
+									<Text text="Description"/>
+								</Column>
+								<Column id="Price">
+									<Text text="Price"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<Input value="{ProductID}"/>
+									</cells>
+									<cells>
+										<Input value="{Name}"/>
+									</cells>
+									<cells>
+										<Input value="{Description}"/>
+									</cells>
+									<cells>
+										<Input value="{Price}"/>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+						<Table id="peopleList1" growing="true" growingThreshold="10" items="{ path: 'su>/Suppliers' }">
+							<columns>
+								<Column id="SupID">
+									<Text text="Supplier"/>
+								</Column>
+								<Column id="SupplierName">
+									<Text text="SupplierName"/>
+								</Column>
+								<Column id="Addresss">
+									<Text text="Addresss"/>
+								</Column>
+								<Column id="EmailAddress">
+									<Text text="EmailAddress"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<Input value="{su>SupplierID}"/>
+									</cells>
+									<cells>
+										<Input value="{su>SupplierName}"/>
+									</cells>
+									<cells>
+										<Input value="{su>Addresss}"/>
+									</cells>
+									<cells>
+										<Input value="{su>EmailAddress}"/>
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</content>
 				</Page>
 			</pages>
 		</App>
