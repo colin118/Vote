@@ -5,7 +5,7 @@ sap.ui.define([
 ], function (UIComponent, Device, models) {
 	"use strict";
 
-	return UIComponent.extend("sap.ui.demo.vote.Component", {
+	return UIComponent.extend("vote.vote.Component", {
 
 		metadata: {
 			manifest: "json"

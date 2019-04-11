@@ -1,7 +1,7 @@
 {
 	"_version": "1.12.0",
 	"sap.app": {
-		"id": "sap.ui.demo.vote",
+		"id": "vote.vote",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
@@ -38,7 +38,7 @@
 	"sap.ui5": {
 
 		"rootView": {
-			"viewName": "sap.ui.demo.vote.view.View1",
+			"viewName": "vote.vote.view.View1",
 			"type": "XML",
 			"async": true,
 			"id": "View1"
@@ -59,7 +59,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "sap.ui.demo.vote.i18n.i18n"
+					"bundleName": "vote.vote.i18n.i18n"
 				}
 			},
 		
@@ -92,7 +92,7 @@
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",
 				"async": true,
-				"viewPath": "sap.ui.demo.vote.view",
+				"viewPath": "vote.vote.view",
 				"controlAggregation": "pages",
 				"controlId": "app",
 				"clearControlAggregation": false
