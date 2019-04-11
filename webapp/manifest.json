@@ -1,7 +1,7 @@
 {
 	"_version": "1.12.0",
 	"sap.app": {
-		"id": "vote.vote",
+		"id": "sap.ui.demo.vote",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
 		"applicationVersion": {
@@ -9,6 +9,7 @@
 		},
 		"title": "{{appTitle}}",
 		"description": "{{appDescription}}",
+<<<<<<< HEAD
 
 		"dataSources": {
 			"Products": {
@@ -26,8 +27,24 @@
 				}
 			}
 		}
+=======
+		"dataSources": {
+			"default": {
+				"uri": "/destinations/northwind/V2/Northwind/Northwind.svc/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0"
+				}
+			}
+		},
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		},
+		"ach": "sap",
+		"resources": "resources.json"
+>>>>>>> refs/heads/master
 	},
-
 	"sap.ui": {
 		"technology": "UI5",
 		"deviceTypes": {
@@ -36,11 +53,10 @@
 			"phone": true
 		}
 	},
-
 	"sap.ui5": {
 
 		"rootView": {
-			"viewName": "vote.vote.view.View1",
+			"viewName": "sap.ui.demo.vote.view.View1",
 			"type": "XML",
 			"async": true,
 			"id": "View1"
@@ -61,7 +77,16 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "vote.vote.i18n.i18n"
+					"bundleName": "sap.ui.demo.vote.i18n.i18n"
+				}
+			},
+			"externalodata": {
+				"dataSource": "default",
+				"settings": {
+					"autoExpandSelect": true,
+					"groupId": "$auto",
+					"synchronizationMode": "None",
+					"useBatch": false
 				}
 			},
 			"": {
@@ -93,7 +118,7 @@
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",
 				"async": true,
-				"viewPath": "vote.vote.view",
+				"viewPath": "sap.ui.demo.vote.view",
 				"controlAggregation": "pages",
 				"controlId": "app",
 				"clearControlAggregation": false

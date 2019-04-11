@@ -1,11 +1,11 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
 	"sap/ui/Device",
-	"vote/vote/model/models"
+	"sap/ui/demo/vote/model/models"
 ], function (UIComponent, Device, models) {
 	"use strict";
 
-	return UIComponent.extend("vote.vote.Component", {
+	return UIComponent.extend("sap.ui.demo.vote.Component", {
 
 		metadata: {
 			manifest: "json"
@@ -25,6 +25,7 @@ sap.ui.define([
 
 			// set the device model
 			this.setModel(models.createDeviceModel(), "device");
+			
 		}
 	});
 });
