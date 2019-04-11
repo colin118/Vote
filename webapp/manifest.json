@@ -62,15 +62,7 @@
 					"bundleName": "sap.ui.demo.vote.i18n.i18n"
 				}
 			},
-			"externalodata": {
-				"dataSource": "default",
-				"settings": {
-					"autoExpandSelect": true,
-					"groupId": "$auto",
-					"synchronizationMode": "None",
-					"useBatch": false
-				}
-			},
+		
 			"": {
 				"dataSource": "Products",
 				"settings": {

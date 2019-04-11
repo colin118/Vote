@@ -4,7 +4,7 @@ sap.ui.define([
 	"sap/ui/model/json/JSONModel"
 ], function (Controller, JSONModel) {
 	"use strict";
-	return Controller.extend("sap.ui.demo.vote.controller.View1", {
+	return Controller.extend("sap.ui.vote.vote.controller.View1", {
 		onInit: function () {
 
 			// var oJSONData = {
