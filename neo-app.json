@@ -1,5 +1,5 @@
 {
-<<<<<<< HEAD
+
 	"welcomeFile": "/webapp/index.html",
 	"routes": [{
 			"path": "/resources",
@@ -36,36 +36,5 @@
 		}
 	],
 	"sendWelcomeFileRedirect": true
-=======
-  "welcomeFile": "/webapp/index.html",
-  "routes": [
-    {
-      "path": "/resources",
-      "target": {
-        "type": "service",
-        "name": "sapui5",
-        "entryPath": "/resources"
-      },
-      "description": "SAPUI5 Resources"
-    },
-    {
-      "path": "/test-resources",
-      "target": {
-        "type": "service",
-        "name": "sapui5",
-        "entryPath": "/test-resources"
-      },
-      "description": "SAPUI5 Test Resources"
-    },
-    {
-      "path": "/destinations/northwind",
-      "target": {
-        "type": "destination",
-        "name": "northwind"
-      },
-      "description": "Northwind OData Service"
-    }
-  ],
-  "sendWelcomeFileRedirect": true
->>>>>>> refs/heads/master
+
 }

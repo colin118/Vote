@@ -9,7 +9,6 @@
 		},
 		"title": "{{appTitle}}",
 		"description": "{{appDescription}}",
-<<<<<<< HEAD
 
 		"dataSources": {
 			"Products": {
@@ -27,23 +26,6 @@
 				}
 			}
 		}
-=======
-		"dataSources": {
-			"default": {
-				"uri": "/destinations/northwind/V2/Northwind/Northwind.svc/",
-				"type": "OData",
-				"settings": {
-					"odataVersion": "2.0"
-				}
-			}
-		},
-		"sourceTemplate": {
-			"id": "ui5template.basicSAPUI5ApplicationProject",
-			"version": "1.40.12"
-		},
-		"ach": "sap",
-		"resources": "resources.json"
->>>>>>> refs/heads/master
 	},
 	"sap.ui": {
 		"technology": "UI5",
