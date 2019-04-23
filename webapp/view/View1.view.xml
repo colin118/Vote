@@ -21,6 +21,9 @@
 								<Column id="Price">
 									<Text text="Price"/>
 								</Column>
+								<Column id="Pic">
+									<Text text="Picture"/>
+								</Column>
 							</columns>
 							<items>
 								<ColumnListItem>
@@ -35,6 +38,9 @@
 									</cells>
 									<cells>
 										<Input value="{Price}"/>
+									</cells>
+									<cells>
+										<Image tooltip="Photo" src="{PictureURL}"/>
 									</cells>
 								</ColumnListItem>
 							</items>
